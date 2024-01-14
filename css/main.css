@@ -800,6 +800,7 @@ a {
   text-align: left;
   padding-top: 60px;
   padding-bottom: 60px;
+  background: rgba(178, 25, 150, 0.3450980392);
 }
 @media screen and (min-width: 1200px) {
   .about {
