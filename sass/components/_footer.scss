@@ -1,6 +1,7 @@
 // /*footer*/
 // /* footer-nav */
-.footer {background-color: $bg-color;}
+.footer {background-color: $bg-color;
+padding-bottom: 60px;}
 
 .footer-block {padding-bottom: 60px;
     
@@ -10,7 +11,7 @@ padding-bottom: 0;}
 
 @media screen and (min-width: 768px) 
 {display: flex;
-flex-wrap: wrap;
+// flex-wrap: wrap;
 justify-content: center;}
 }
 
