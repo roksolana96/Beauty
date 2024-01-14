@@ -931,7 +931,6 @@ a {
   }
 }
 .make__block {
-  padding: 0;
   margin: auto;
   margin-bottom: 30px;
 }
@@ -982,6 +981,11 @@ a {
   z-index: 1;
   overflow: hidden;
 }
+@media screen and (max-width: 768px) {
+  .make__item {
+    width: 370px;
+  }
+}
 
 .make__label {
   display: -webkit-box;
@@ -989,7 +993,6 @@ a {
   display: flex;
   height: 70px;
   width: 370px;
-  margin-left: 40px;
   margin-bottom: 5px;
   background-color: rgba(47, 48, 58, 0.8);
   -webkit-box-align: center;
