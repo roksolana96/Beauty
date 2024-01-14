@@ -27,8 +27,8 @@ padding-bottom: 118px;}
 
 .about__icon{
     display: flex;
-    height: 120px;
-    max-width: 450px;
+    height: 180px;
+    max-width: 250px;
 
     background: $color-button;
     border-radius: 4px;
@@ -42,8 +42,9 @@ padding-bottom: 118px;}
 @media screen and (min-width: 768px) and (max-width: 1199px)
 {width: 354px;}
 
-&-vsg{height: 70px;
-    width: 70px;}}
+&-vsg{height: 180px;
+    width: 250px;
+}}
 
 .about__item {
     padding-left: 0;
