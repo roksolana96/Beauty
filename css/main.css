@@ -949,6 +949,7 @@ a {
   .make__block {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    padding: 0;
     margin: auto;
   }
 }
