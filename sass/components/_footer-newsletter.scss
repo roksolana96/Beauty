@@ -2,13 +2,14 @@
     /* newsletter */
 .newsletter { display: block;
     height: 50px;
+    margin-top: 20px;
 // max-width: 450px;
 
 @media screen and (min-width: 1200px)
     {display: flex;
     height: 50px;
     left: 450px;
-    margin-left: 20px;
+    margin-left: 0px;
     margin-top: 20px;} 
 
   

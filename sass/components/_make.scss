@@ -1,26 +1,71 @@
 //Make
-.make{
-    @media (max-width: 1199px)
-{display: none;}}
+// .make{
+//     @media (max-width: 1199px)
+// {display: none;}}
 .make {
     padding-top: 0;
     padding-bottom: 94px;
 
 &__title {@extend %title-text;
 
-    margin-top: 0;
-    margin-bottom: 50px;}
+    padding-top: 94px;
+    padding-bottom: 50px;
+    margin-top:60px;
+    margin-bottom:30px;
 
-&__block {display: flex;
-    margin-right: -30px;
-    padding-left: 0;
-    margin-top: 0;
-    margin-bottom: 0;
+@media screen and (min-width: 1200px)
+{padding-top: 60px;
+padding-bottom: 30px;}
 
-    height: 294px;}
+@media screen and (max-width: 767px) 
+{padding-top: 60px;
+padding-bottom: 30px;}}
 
-&__block .make__image {flex-basis: calc((100% - 30px) / 3);
-    margin-right: 30px;}
+&__block  {padding: 0;
+    margin: auto;
+    margin-bottom: 30px;
+
+@media screen and (min-width: 1200px)
+{display: flex;
+        padding-left: 0px;
+        margin-top: 0;
+        margin-bottom: 0;
+    
+        height: 294px;}
+
+@media screen and (min-width: 768px) and (max-width: 1199px)
+{
+flex-wrap: wrap;
+
+margin: auto;}
+}
+// {display: flex;
+//     padding-left: 0px;
+//     margin-top: 0;
+//     margin-bottom: 0;
+
+//     height: 294px;}
+    
+
+&__block .make__image {
+
+
+    @media screen and (max-width: 767px)
+    {margin-bottom: 30px;}
+    
+    @media screen and (min-width: 768px) 
+    {width: calc((100% - 30px) / 3);
+    margin: 15px;}
+    
+    @media screen and (min-width: 1200px)
+    {margin-right: 15px;
+    flex-basis: calc((100% - 30px) / 3);}
+    
+    &:last-child {@media screen and (max-width: 767px)
+    {margin-bottom: 0px;}}}
+
+
+    
 }
 
     //Позиціонування
@@ -31,13 +76,50 @@
 .make__label{ display: flex;
     height: 70px;
     width: 370px;
-
+    margin-left: 40px;
+    margin-bottom: 5px;
+    
     background-color: rgba(47, 48, 58, 0.8);
     align-items: center;
     justify-content: center;
-
+    
     position: absolute; 
-    bottom:0;} 
+    bottom:0;
+    
+@media screen and (min-width: 1200px)
+{display: flex;
+height: 70px;
+width: 370px;
+margin-left: 0;
+margin-bottom: 0px;
+
+background-color: rgba(47, 48, 58, 0.8);
+align-items: center;
+justify-content: center;
+
+position: absolute; 
+bottom:0;} 
+
+@media screen and (min-width: 768px) and (max-width: 1199px)
+{display: flex;
+    height: 70px;
+    width: 370px;
+    margin-left: 185px;
+    margin-bottom: 5px;
+    
+    
+    background-color: rgba(47, 48, 58, 0.8);
+    align-items: center;
+    justify-content: center;
+    
+    position: absolute; 
+    bottom:0;}
+
+
+}
+
+
+    
 
 .make__description {@extend %paragraph;
     color: #FFFFFF;

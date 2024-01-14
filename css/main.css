@@ -908,34 +908,73 @@ a {
   }
 }
 
-@media (max-width: 1199px) {
-  .make {
-    display: none;
-  }
-}
-
 .make {
   padding-top: 0;
   padding-bottom: 94px;
 }
 .make__title {
-  margin-top: 0;
-  margin-bottom: 50px;
+  padding-top: 94px;
+  padding-bottom: 50px;
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .make__title {
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .make__title {
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
 }
 .make__block {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-right: -30px;
-  padding-left: 0;
-  margin-top: 0;
-  margin-bottom: 0;
-  height: 294px;
+  padding: 0;
+  margin: auto;
+  margin-bottom: 30px;
 }
-.make__block .make__image {
-  -ms-flex-preferred-size: calc((100% - 30px) / 3);
-      flex-basis: calc((100% - 30px) / 3);
-  margin-right: 30px;
+@media screen and (min-width: 1200px) {
+  .make__block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 0px;
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 294px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .make__block {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  .make__block .make__image {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .make__block .make__image {
+    width: calc((100% - 30px) / 3);
+    margin: 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .make__block .make__image {
+    margin-right: 15px;
+    -ms-flex-preferred-size: calc((100% - 30px) / 3);
+        flex-basis: calc((100% - 30px) / 3);
+  }
+}
+@media screen and (max-width: 767px) {
+  .make__block .make__image:last-child {
+    margin-bottom: 0px;
+  }
 }
 
 .make__item {
@@ -950,6 +989,8 @@ a {
   display: flex;
   height: 70px;
   width: 370px;
+  margin-left: 40px;
+  margin-bottom: 5px;
   background-color: rgba(47, 48, 58, 0.8);
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -959,6 +1000,46 @@ a {
           justify-content: center;
   position: absolute;
   bottom: 0;
+}
+@media screen and (min-width: 1200px) {
+  .make__label {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 70px;
+    width: 370px;
+    margin-left: 0;
+    margin-bottom: 0px;
+    background-color: rgba(47, 48, 58, 0.8);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: absolute;
+    bottom: 0;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .make__label {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 70px;
+    width: 370px;
+    margin-left: 185px;
+    margin-bottom: 5px;
+    background-color: rgba(47, 48, 58, 0.8);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: absolute;
+    bottom: 0;
+  }
 }
 
 .make__description {
@@ -970,7 +1051,7 @@ a {
 .team {
   padding-top: 0px;
   padding-bottom: 60px;
-  background: rgba(178, 25, 150, 0.3450980392);
+  background: #eae9ed;
 }
 @media screen and (min-width: 768px) {
   .team {
@@ -1247,11 +1328,17 @@ a {
 
 .footer {
   background-color: #1f1f26;
-  padding-bottom: 60px;
+  padding-bottom: 0px;
 }
 
 .footer-block {
-  padding-bottom: 60px;
+  padding-bottom: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 @media screen and (min-width: 1200px) {
   .footer-block {
@@ -1401,6 +1488,7 @@ a {
 .newsletter {
   display: block;
   height: 50px;
+  margin-top: 20px;
 }
 @media screen and (min-width: 1200px) {
   .newsletter {
@@ -1409,7 +1497,7 @@ a {
     display: flex;
     height: 50px;
     left: 450px;
-    margin-left: 20px;
+    margin-left: 0px;
     margin-top: 20px;
   }
 }
